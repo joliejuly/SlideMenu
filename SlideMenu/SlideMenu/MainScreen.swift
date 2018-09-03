@@ -13,16 +13,13 @@ final class MainScreen: UIViewController {
     private var menuIsShown = false
     
     @IBOutlet weak var menuWidthConstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var mainViewLeading: NSLayoutConstraint!
-    
     @IBOutlet weak var mainViewTrailing: NSLayoutConstraint!
-    
+    @IBOutlet weak var mainView: UIView!
     
     @IBAction func menuBtnTapped(_ sender: UIBarButtonItem) {
         handleMenu()
     }
-    
     
     @IBAction func swipedToRight(_ sender: UISwipeGestureRecognizer) {
         
@@ -32,10 +29,12 @@ final class MainScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mainView.layer.shadowOpacity = 3
+        mainView.layer.shadowRadius = 6
+        mainView.layer.shadowOffset = CGSize(width: 2, height: 2)
     }
 
-
-    
     private func handleMenu() {
         if menuIsShown {
             
@@ -43,6 +42,7 @@ final class MainScreen: UIViewController {
             UIView.animate(withDuration: 0.4) {
                 self.mainViewLeading.constant = 0
                 self.mainViewTrailing.constant = 0
+                self.mainView.layer.cornerRadius = 0
                 self.view.layoutIfNeeded()
             }
             
@@ -51,6 +51,7 @@ final class MainScreen: UIViewController {
             UIView.animate(withDuration: 0.4) {
                 self.mainViewLeading.constant = 140
                 self.mainViewTrailing.constant = -140
+                self.mainView.layer.cornerRadius = 20
                 self.view.layoutIfNeeded()
             }
         }

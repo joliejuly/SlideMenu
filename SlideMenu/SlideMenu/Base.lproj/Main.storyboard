@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xnH-qR-OFg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n70-HZ-qTF">
-                                <rect key="frame" x="0.0" y="64" width="140" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="140" height="647"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbh-8s-Vqw">
                                         <rect key="frame" x="10" y="17" width="120" height="30"/>
@@ -44,7 +44,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0M-4h-iUJ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOg-vH-mLh">
                                         <rect key="frame" x="120" y="50" width="135" height="44"/>
@@ -65,6 +65,7 @@
                                 </connections>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="0.37254902719999999" blue="0.60112847219999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="n70-HZ-qTF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2KF-8s-fgy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q0M-4h-iUJ" secondAttribute="bottom" id="7g2-mJ-ogF"/>
@@ -84,6 +85,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="mainView" destination="Q0M-4h-iUJ" id="brH-c8-8rr"/>
                         <outlet property="mainViewLeading" destination="gmh-oF-lGh" id="CDf-ih-r33"/>
                         <outlet property="mainViewTrailing" destination="WBN-8N-juP" id="mOx-bf-TqY"/>
                         <outlet property="menuWidthConstraint" destination="UBP-5s-Ykb" id="UfZ-7C-xnI"/>
@@ -112,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncg-72-Phx">
-                                <rect key="frame" x="94.5" y="100" width="186" height="44"/>
+                                <rect key="frame" x="94.5" y="56" width="186" height="44"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="32"/>
                                 <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -129,24 +131,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BvK-qN-jAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1617" y="-566"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="yzv-nU-AW1">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xnH-qR-OFg" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="krc-17-0HH">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lRR-uD-sdD"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6g7-BR-oSw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="-564.46776611694156"/>
         </scene>
     </scenes>
 </document>
