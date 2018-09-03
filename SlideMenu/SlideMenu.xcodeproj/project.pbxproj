@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F4ECE63213DAAF400D41ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4ECE62213DAAF400D41ACC /* AppDelegate.swift */; };
-		0F4ECE65213DAAF400D41ACC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4ECE64213DAAF400D41ACC /* ViewController.swift */; };
+		0F4ECE65213DAAF400D41ACC /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4ECE64213DAAF400D41ACC /* MainScreen.swift */; };
 		0F4ECE68213DAAF400D41ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4ECE66213DAAF400D41ACC /* Main.storyboard */; };
 		0F4ECE6A213DAAF500D41ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4ECE69213DAAF500D41ACC /* Assets.xcassets */; };
 		0F4ECE6D213DAAF500D41ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4ECE6B213DAAF500D41ACC /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		0F4ECE5F213DAAF400D41ACC /* SlideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4ECE62213DAAF400D41ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0F4ECE64213DAAF400D41ACC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0F4ECE64213DAAF400D41ACC /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		0F4ECE67213DAAF400D41ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F4ECE69213DAAF500D41ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F4ECE6C213DAAF500D41ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				0F4ECE62213DAAF400D41ACC /* AppDelegate.swift */,
-				0F4ECE64213DAAF400D41ACC /* ViewController.swift */,
+				0F4ECE64213DAAF400D41ACC /* MainScreen.swift */,
 				0F4ECE66213DAAF400D41ACC /* Main.storyboard */,
 				0F4ECE69213DAAF500D41ACC /* Assets.xcassets */,
 				0F4ECE6B213DAAF500D41ACC /* LaunchScreen.storyboard */,
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F4ECE65213DAAF400D41ACC /* ViewController.swift in Sources */,
+				0F4ECE65213DAAF400D41ACC /* MainScreen.swift in Sources */,
 				0F4ECE63213DAAF400D41ACC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AH2JSYW82G;
 				INFOPLIST_FILE = SlideMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +304,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AH2JSYW82G;
 				INFOPLIST_FILE = SlideMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

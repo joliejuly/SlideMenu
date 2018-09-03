@@ -8,11 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainScreen: UIViewController {
 
+    var menuIsShown
+    @IBOutlet weak var menuWidthConstraint: NSLayoutConstraint!
+    
+    @IBAction func menuBtnTapped(_ sender: UIBarButtonItem) {
+        
+        view.layoutIfNeeded()
+        UIView.animate(withDuration: 0.4) {
+            self.menuWidthConstraint.constant = 140
+            self.view.layoutIfNeeded()
+        }
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        menuWidthConstraint.constant = 0
     }
 
 
