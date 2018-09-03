@@ -1,2 +1,2 @@
 # SlideMenu
-Very customizable slide menu for ios app
+Customizable slide menu for ios app
